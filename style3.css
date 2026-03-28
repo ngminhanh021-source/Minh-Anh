@@ -1,0 +1,162 @@
+ @font-face {
+	 font-family: 'Fz-Gypsy-Curse-1';
+	 src: url('Fz-Gypsy-Curse-1.ttf') format('truetype');
+	 font-weight: normal;
+	 font-style: normal;
+	 font-display: swap;
+ }
+ 
+ :root{
+  --bg-900:#061226;
+  --bg-800:#07162a;
+  --card:#0e1720;
+  --muted:#9fb0c6;
+  --accent-1:#ff8a5b;
+  --accent-2:#ff495e;
+  --glass: rgba(255,255,255,0.04);
+  --radius:14px;
+  --max-width:1200px;
+  --container-pad:1.25rem;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #e6eef8;
+ }
+ .tieude{
+	 letter-spacing:3px;
+	 font-size: 2em;
+ }
+
+body {
+	margin: 0;   
+    color: #eee;
+    font-family:'Roboto', sans-serif;
+	background-image: url('images/BI.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat; 
+}
+
+		body::before {
+  opacity:0.5;
+  z-index: -1; 
+}
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background: linear-gradient(180deg, rgba(6,10,20,0.55), rgba(6,10,20,0.25));
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.header-inner{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between;
+  padding:.6rem 0;
+}
+.logo{display:flex;gap:.6rem;align-items:center;text-decoration:none}
+.brand-title{font-family: Poppins, sans-serif; font-weight:800; font-size:1.05rem; color:var(--accent-1)}
+.brand-sub{display:block;font-size:.75rem;color:var(--muted);margin-top:2px}
+.main-nav ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+.main-nav a{color:var(--muted);text-decoration:none;padding:.45rem .6rem;border-radius:8px}
+.main-nav a:hover, .main-nav a:focus{color:#fff;outline: none}
+.header-actions{display:flex;gap:.6rem;align-items:center}
+.nav-toggle{display:none;background:transparent;color:var(--muted);border:0;font-size:1.2rem;padding:.4rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.65rem .95rem;border-radius:12px;text-decoration:none;font-weight:600;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent-1), var(--accent-2));color:#07121a;border:0;box-shadow:0 10px 30px rgba(255,73,94,0.12)}
+.btn-primary.btn-lg{padding: .9rem 1.2rem; font-size:1.05rem}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+h1{
+      text-align: center;
+      padding: 10px 10px;
+      background: linear-gradient(to bottom, #330000, #000);
+    }
+
+h1 {
+      font-family:'Fz-Gypsy-Curse-1', cursive;
+      font-size: 6em;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff0000, 0 0 20px #800000;
+      margin-bottom: 10px;
+	  letter-spacing:5px;
+    }
+
+ p {
+      font-size: 1.2em;
+      color:#8FBC8F;
+      letter-spacing: 1px;
+	  font-weight:bold;
+	  text-align: center;
+    }
+
+.room-link {
+  text-decoration: none; 
+  color: inherit;        /* giữ nguyên màu chữ bên trong */
+}
+
+.rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+.room {
+      background-color: #111;
+      border: 2px solid #550000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #220000;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+.room:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #3CB371;
+    }
+
+.room img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      filter: brightness(70%);
+      transition: filter 0.3s;
+    }
+
+.room:hover img {
+      filter: brightness(100%);
+    }
+
+.room-content {
+      padding: 20px;
+    }
+
+.room h2 {
+      font-family:'Fz-Gypsy-Curse-1', cursive;
+      color: #ff2222;
+      margin-bottom: 10px;
+    }
+
+.room p {
+      color: #ccc;
+      font-size: 0.95em;
+      line-height: 1.6em;
+    }
+
+footer {
+      text-align: center;
+      padding: 20px;
+      background: #110000;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+footer span {
+      color: #ff0000;
+    }

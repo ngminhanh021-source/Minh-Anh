@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EscapeLHP — Escape Room</title>
+  <meta name="description" content="EscapeLHP - Trải nghiệm Escape Room hấp dẫn, thử thách trí tuệ và tinh thần đồng đội." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="EscapeLHP - Trang chủ">
+        <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="g" x1="0" x2="1">
+		  <stop offset="0" stop-color="#ff8a5b"/>
+		  <stop offset="1" stop-color="#ff495e"/>
+		  </linearGradient></defs>
+          <rect x="1.5" y="1.5" width="21" height="21" rx="6" fill="url(#g)"/>
+          <path d="M7 10h10v2H7z" fill="rgba(255,255,255,0.15)"/>
+        </svg>
+        <div class="brand">
+          <span class="brand-title">EscapeLHP</span>
+          <span class="brand-sub">Escape Room</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Chính">
+        <ul>
+          <li><a href="Nma.html">Trò chơi</a>
+          <li><a href="datcho.html">Đặt chỗ</a></li>
+          <li><a href="gioithieu.html">Thành viên</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="Nma.html">Xem phòng</a>
+        <a class="btn btn-primary" href="datcho.html">Đặt chỗ</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+
+   
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Giới thiệu">
+      <picture class="hero-media">
+        <source srcset="assets/images/hero.jpg" type="image/jpeg">
+        <img src="assets/images/hero.jpg" alt="Bức ảnh hero Escape Room">
+      </picture>
+
+      <div class="hero-panel container">
+        <h1 class="hero-title">60 phút. Một đội. Một câu chuyện — Bạn dám thử?</h1>
+        <p class="hero-desc">Tham gia EscapeLHP: phòng thiết kế kịch bản chuyên nghiệp, thử thách sáng tạo và cảm xúc thăng hoa. Tuyệt cho bạn bè, đồng nghiệp hay team building.</p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary btn-lg" href="datcho.html">Đặt ngay — Chỉ còn vài chỗ</a>
+          <a class="btn btn-ghost" href="#games">Xem chi tiết phòng</a>
+        </div>
+
+        <ul class="hero-stats">
+          <li><strong>45–90 phút</strong></li>
+          <li><strong>2–8 người</strong></li>
+          <li><strong>Hỗ trợ 24/7</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GAMES -->
+    <section class="section" id="games" aria-labelledby="games-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="games-title">Chủ đề nổi bật</h2>
+          <p class="lead">Lựa chọn từ nhiều kịch bản — kinh dị, trinh thám, khoa học viễn tưởng hoặc phiêu lưu.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="game-card">
+            <div class="game-media">
+              <img src="assets/images/h1.jpg" alt="Dự án No.37">
+            </div>
+            <div class="game-body">
+              <h3>Dự án No.37</h3>
+              <p class="muted">Tìm manh mối trong góc tối, giải mã lịch sử uẩn khúc.</p>
+              <div class="game-meta">
+                <span class="tag">60 phút</span>
+                <span class="level">Khó</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="datcho.html">Đặt phòng</a>
+                <a class="link-more" href="phong1.html">Chi tiết →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-media">
+              <img src="assets/images/h2.jpg" alt="Ngọn lửa thánh tội">
+            </div>
+            <div class="game-body">
+              <h3>Ngọn lửa thánh tội</h3>
+              <p class="muted">Tìm về nơi mọi thứ bắt đầu</p>
+              <div class="game-meta">
+                <span class="tag">45 phút</span>
+                <span class="level">Trung bình</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="datcho.html">Đặt phòng</a>
+                <a class="link-more" href="phong2.html">Chi tiết →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-media">
+              <img src="images/h3.jpg" alt="Dinh thự Marrowbone">
+            </div>
+            <div class="game-body">
+              <h3>Dinh thự Marrowbone</h3>
+              <p class="muted">Lồng ghép tư duy logic và phân tích chứng cứ.</p>
+              <div class="game-meta">
+                <span class="tag">45 phút</span>
+                <span class="level">Siêu khó</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="datcho.html">Đặt phòng</a>
+                <a class="link-more" href="phong3.html">Chi tiết →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO / DIFFERENTIATORS (thay cho section booking cũ) -->
+<section class="section booking-intro" id="booking" aria-labelledby="intro-title">
+  <div class="container booking-grid">
+    <div class="intro-panel">
+      <h2 id="intro-title">EscapeLHP — Trải nghiệm escape room khác biệt</h2>
+      <p class="lead">
+        EscapeLHP không chỉ là “giải đố trong một phòng” — đó là hành trình kể chuyện, tương tác vật lý và cảm xúc đồng đội.
+        Mỗi phòng được thiết kế như một câu chuyện hoàn chỉnh, kết hợp đạo cụ thật, hiệu ứng môi trường và tình huống bất ngờ để bạn không chỉ
+        suy luận mà còn cảm nhận — từ không khí, âm thanh đến ánh sáng.
+      </p>
+
+      <ul class="diff-list">
+        <li><strong>Kịch bản điện ảnh:</strong> Mỗi phòng như một câu chuyện có mở đầu, nút thắt và cao trào — không đơn thuần là chuỗi mật mã.</li>
+        <li><strong>Tương tác vật lý & đạo cụ thật:</strong> Thử nghiệm với những đồ vật thực, cơ cấu cơ khí và thiết kế môi trường, không chỉ click trên màn hình.</li>
+        <li><strong>Hỗ trợ & điều phối trực tiếp:</strong> Game master theo dõi, điều chỉnh độ khó và hỗ trợ kịp thời để trải nghiệm an toàn và trọn vẹn.</li>
+        <li><strong>Thiết kế dành cho đồng đội:</strong> Thử thách phân vai, kết hợp nhiều kỹ năng — tư duy, quan sát, giao tiếp và phối hợp.</li>
+        <li><strong>Tái chơi sáng tạo:</strong> Nhiều lớp ẩn và ngõ rẽ khiến mỗi lần chơi đều có cơ hội khám phá mới.</li>
+      </ul>
+
+      <div class="intro-cta">
+        <a class="btn btn-primary" href="#games">Khám phá phòng</a>
+        <a class="btn btn-ghost" href="#faq">Xem câu hỏi thường gặp</a>
+      </div>
+    </div>
+
+    <aside class="booking-aside intro-aside" aria-hidden="false">
+      <div class="promo-card">
+        <h4>Đến thử ngay</h4>
+        <p class="muted">Giảm 10% cho lần đặt đầu tiên khi bạn nhập mã <strong>CAYBONSAILHP</strong> tại quầy.</p>
+      </div>
+
+      <div class="why-card">
+        <h4>Phù hợp cho</h4>
+        <ul>
+          <li>Team building công ty</li>
+          <li>Bữa tiệc sinh nhật / họp nhóm bạn bè</li>
+          <li>Buổi hẹn hò khác biệt</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title">Khoảnh khắc & Phòng</h2>
+        <p class="lead">Một vài ảnh chụp thực tế từ các phòng và đội chơi.</p>
+
+        <div class="masonry">
+          <figure class="mitem m1"><img src="assets/images/gallery-1.jpg" alt="Gallery 1"></figure>
+          <figure class="mitem m2"><img src="assets/images/gallery-2.jpg" alt="Gallery 2"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Nhận xét khách hàng</h2>
+        <div class="review-grid">
+          <blockquote class="review">
+            <p>"Độ sợ miễn bàn, thực sự là quá ghê luôn ấy. Mọi người chơi nhớ chuẩn bị tinh thần trước là sẽ có lúc tách nhau ra nha. Mà nhân viên nhiệt tình lắm luôn nên cần gì mọi người cứ gọi là sẽ có người hỗ trợ mọi người liền ý. Highly recommend nếu bạn muốn thử thách độ gan dạ của bản thân nè"</p>
+            <cite>— "Boss" Vu Ta Le</cite>
+          </blockquote>
+          <blockquote class="review">
+            <p>"舞台設定は美しく、洗練されています。ストーリーは意味深く、どんでん返しがあります。パズルはストーリー展開に重点を置いているため、それほど難しくありません。俳優陣の演技は素晴らしかったです。"</p>
+            <cite>— Shakira Lee Min Ho</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Câu hỏi thường gặp</h2>
+        <div class="faq-grid">
+          <details><summary>Trò chơi phù hợp cho tuổi nào?</summary><p>Từ 14 tuổi; dưới 14 cần người lớn đi cùng.</p></details>
+          <details><summary>Hủy/đổi lịch như thế nào?</summary><p>Vui lòng báo trước 24 giờ để không bị phí hủy.</p></details>
+          <details><summary>Tối đa bao nhiêu người?</summary><p>Tùy phòng, thông thường 2–8 người.</p></details>
+		  <details><summary>Bảng giá tại EscapeLHP?</summary><p>Trước 17h các ngày trong tuần (thứ 2 đến thứ 6): 159k/ng/1 tiếng.<br>Sau 17h và cuối tuần (thứ 7, chủ nhật): 189k/ng/1 tiếng.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="about">
+        <strong>EscapeX</strong>
+        <p class="muted">235 Nguyễn Văn Cừ, Phường Chợ Quán, TP. Hồ Chí Minh — Hotline: <a href="tel: 02838398506">02838398506</a></p>
+      </div>
+      <div class="hours">
+        <h4>Giờ mở cửa</h4>
+        <p class="muted">T2–T6: 10:00–22:00<br>T7–CN: 09:00–23:00</p>
+      </div>
+      <div class="socials">
+        <h4>Kết nối</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Tiktok</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <small>© <span id="year"></span> EscapeLHP. Bản quyền thuộc về EscapeLHP.</small>
+    </div>
+  </footer>
+</body>
+</html>

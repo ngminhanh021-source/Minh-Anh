@@ -1,0 +1,139 @@
+/* PHONG-1 */
+@font-face {
+	 font-family: 'Fz-Gypsy-Curse-1';
+	 src: url('Fz-Gypsy-Curse-1.ttf') format('truetype');
+	 font-weight: normal;
+	 font-style: normal;
+	 font-display: swap;
+}
+.room-detail {
+  background: #0a0a0a url(images/h1.jpg) center/cover fixed;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 60px 0;
+  margin: 0;
+}
+
+/* Khối bao tổng */
+..detail-container {
+  position: relative;
+  width: 100%;
+  height: auto; /* hoặc auto nếu bạn muốn co theo nội dung */
+  overflow: hidden;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+}
+
+
+/* ND BenPhai */
+.detail-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.room-title {
+  position: absolute;
+  top: 20px;       /* chỉnh vị trí theo ý bạn */
+  left: 70px;
+  z-index: 2;
+  color: #ff2a2a;
+  font-family: 'Fz-Gypsy-Curse-1', sans-serif;
+  font-size: 7em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #000;
+}
+.detail-content {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  z-index: 2;
+  max-width: 1000px;
+  color: #ddd;
+  font-size: 1.07em;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.detail-content p {
+  line-height: 1.7;
+  font-size: 1.05em;
+  margin-bottom: 10px;
+}
+
+/* Danh sách thông tin */
+.detail-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.detail-content li {
+  margin: 6px 0;
+  color: #ff5555;
+  font-weight: bold;
+}
+
+/* Nút quay lại */
+.btn {
+	display: flex;
+  justify-content: space-between; /* đẩy 2 nút ra hai bên */
+  align-items: center;
+  margin-top: 25px;
+}
+.back-btn {
+  display: inline-block;
+  font-family:Verdana;
+  background: #b22222;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.back-btn:hover {
+  background: #d63a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px red;
+}
+
+.Dangki-btn {
+  display: inline-block;
+  font-family:Verdana;
+  background: #3CB371;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.Dangki-btn:hover {
+  background:#5dd490;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px green;
+}
+
+.room-detail2 {
+  background: #0a0a0a url(images/h2.jpg) center/cover fixed;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 60px 0;
+  margin: 0;
+}
+
+.room-detail3 {
+  background: #0a0a0a url(images/h3.jpg) center/cover fixed;
+  color: #ddd;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 60px 0;
+  margin: 0;
+}

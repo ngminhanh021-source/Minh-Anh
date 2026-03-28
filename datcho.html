@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />	
+    <meta http-equiv="X-UA-Compatible" content="IE=egde" />
+    <meta
+      name="viewport"
+      content="width-device-width,
+	initial-scale=1.0"
+    />
+    <link rel="stylesheet" type="text/css" href="styledatcho.css" />
+  </head>
+
+ 
+
+  <body>
+  
+  <header
+  class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" href="#" aria-label="EscapeX - Trang chủ">
+        <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff8a5b"/>
+		  <stop offset="1" stop-color="#ff495e"/>
+		  </linearGradient></defs>
+          <rect x="1.5" y="1.5" width="21" height="21" rx="6" fill="url(#g)"/>
+          <path d="M7 10h10v2H7z" fill="rgba(255,255,255,0.15)"/>
+        </svg>
+        <div class="brand">
+          <span class="brand-title">EscapeLHP</span>
+          <span class="brand-sub">Escape Room</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Chính">
+        <ul>
+          <li><a href="Nma.html">Trò chơi</a>
+          <li><a href="#booking">Đặt chỗ</a></li>
+          <li><a href="gioithieu.html">Thành viên</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline" href="Nma.html">Xem phòng</a>
+        <a class="btn btn-primary" href="">Đặt chỗ</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+  
+    <!-- BOOKING -->
+    <section
+      class="section booking"
+      id="booking"
+      aria-labelledby="booking-title"
+    >
+      <div class="container booking-grid">
+        <div class="booking-panel">
+          <h2 id="booking-title">ĐẶT CHỖ</h2>
+          <p class="lead">Chọn ngày, giờ và số thành viên để giữ chỗ ngay.</p>
+
+          <form
+            class="booking-form"
+            action="#"
+            method="post"
+            onsubmit="event.preventDefault(); alert('Demo: Đặt chỗ thành công!');"
+          >
+            <div class="form-row">
+              <label
+                >Tên liên hệ<input
+                  type="text"
+                  name="team"
+                  placeholder="Tên đội / số điện thoại"
+                  required
+              /></label>
+              <label
+                >Chọn trò chơi
+                <select name="game" required>
+                  <option value="house">Dự án No.37</option>
+                  <option value="lab">Ngọn lửa thánh tội</option>
+                  <option value="sherlock">Dinh thự Marrowbone</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>Ngày<input type="date" name="date" required /></label>
+              <label>Giờ<input type="time" name="time" required /></label>
+            </div>
+
+            <div class="form-row small">
+              <label
+                >Số người<input
+                  type="number"
+                  name="size"
+                  min="2"
+                  max="8"
+                  value="4"
+                  required
+              /></label>
+              <label
+                >Ghi chú (tuỳ chọn)<input
+                  type="text"
+                  name="note"
+                  placeholder="Ví dụ: sinh nhật, kỷ niệm..."
+              /></label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">
+                Xác nhận đặt
+              </button>
+              <a class="muted phone" href="tel:+840123456789"
+                >📞 02838398506</a
+              >
+            </div>
+          </form>
+        </div>
+
+        <aside class="booking-aside">
+          <div class="promo-card">
+            <h4>Ưu đãi</h4>
+            <ul>
+              <li><strong>10%</strong> SINH VIÊN (T2-T5)</li>
+              <li><strong>15%</strong> COMBO 2 PHÒNG</li>
+              <li>QUÀ TẶNG CHO ĐỘI CHIẾN THẮNG MỖI TUẦN</li>
+            </ul>
+          </div>
+
+          <div class="map-embed" aria-hidden="true">
+            <img
+              src="assets\images\gallery-1.jpg"
+              alt="Vị trí EscapeX (minh họa)"
+            />
+          </div>
+        </aside>
+      </div>
+    </section>
+    <script scr="script.js"></script>
+  </body>
+</html>
